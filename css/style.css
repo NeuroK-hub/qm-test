@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.woff);
+  src: url(../fonts/OpenSans-Regular.woff);
+}
+
+.page {
+  width: 100%;
+  font-family: "Open Sans";
+}
+
+
+@media (min-width:1200px) {
+  .header {
+    background-image: url(../img/banner-bg.jpg);
+    position: relative;
+    min-width: 1200px;
+    height: 450px;
+    background-position: center center;
+  }
+
+
+  .logo {
+    padding-top: 29px;
+    padding-left: 248px;
+  }
+
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .title {
+    line-height: 75pt;
+    font-size: 45px;
+    width: 55%;
+  }
+
+
+  
+  .trend-cart{
+    width: 410px;
+    height: 320px;
+  }
+
+
+
+}
+
+@media (min-width:641px) and (max-width:1200px) {
+
+
+
+  .header {
+    background-image: url(../img/banner-bg-tablet.jpg);
+    position: relative;
+    min-width: 768px;
+    height: 392px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    padding-top: 50px;
+    padding-left: 35px;
+  }
+
+  .title {
+    line-height: 55pt;
+    font-size: 40px;
+    width: 596px;
+    justify-content: center;
+  }
+
+
+  .trend-cart {
+    width: 386px;
+    height: 249px;
+  }
+
+  
+}
+
+
+/*      мобилка     */
+
+
+@media (max-width:640px) {
+
+
+  .header {
+    background-image: url(../img/banner-mobile.jpg);
+    position: relative;
+    min-width: 361px;
+    height: 640px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+
+  .logo {
+    padding-top: 225px;
+    left: auto;
+    right: auto;
+    justify-content: center;
+
+
+  }
+
+  .title {
+    line-height: 36pt;
+    width: 277px;
+    height: 91px;
+    font-size: 26px;
+  }
+  .trend-cart {
+    width: 362px;
+    height: 233px;
+  }
+  
+
+}
+
+/* бургер в меню*/
+
+
+
+
+/* постоянные стили*/
+.header {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header::after {
+  content: "";
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.logo {
+  height: 46px;
+  z-index: 3;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
+
+}
+
+.container {
+  margin: 0;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+
+.menu {
+  padding-top: 45px;
+  padding-right: 10%;
+}
+
+.menu-list {
+  margin-top: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-link {
+  text-decoration: none;
+  list-style: none;
+  font-size: 13px;
+  color: inherit;
+}
+
+.menu-link:hover {
+  text-decoration: underline #fff;
+}
+
+.menu-list-item:nth-child(n + 2) {
+  margin-left: 33px;
+}
+
+/* карточки тренды */
+
+
+.trends-blok {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+}
+
+
+.new-post-line {
+  background-color: rgb(181, 159, 91);
+  opacity: 0.4;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 66px;
+  height: 3px;
+}
+
+
+.trends {
+  margin-top: 24px;
+  display: flex;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content:space-between;
+}
+
+
+
+
+.trend-cart{
+  background-image: url(../img/trend1.jpg);
+  position: relative;
+}
+
+.trend-cart::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.trend-card__body {
+  position: relative;
+}
+
+
+
+
+
+
+.tags-entry__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+.tags-entry__item {
+  padding: 0;
+  margin-right: 10px;
+}
+
+.tags-entry__link {
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  color: rgb(181, 159, 91);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tags-entry__link:hover {
+  text-decoration: underline #b59f5b;
+}
+
+.title-entry__link {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.title-entry__link:hover {
+  color: rgb(181, 159, 91);
+}
